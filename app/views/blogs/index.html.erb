@@ -7,9 +7,9 @@
 <h4>body</h4>
 <p><%= book.body %></p>
 
-<%= link_to "Show", book_path %>
-<%= link_to "Edit", edit_books_path %>
-<%= link_to "Destroy", destroy_books_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %>
+<%= link_to "Show", blog_path(@book.id) %>
+<%= link_to "Edit", edit_blogs_path(@book.id) %>
+<%= link_to "Destroy", destroy_blogs_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %>
 
 <% end %>
 
@@ -21,6 +21,6 @@
 <h4>Body</h4>
 <%= f.text_area :body %>
 
-<%= f.submit "Create Book" %>
+<%= f.submit link_to "Create Book" %>
 
 <% end %>
