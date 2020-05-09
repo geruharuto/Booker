@@ -27,3 +27,38 @@ main{
 .top-text{
 	padding: 20px;
 }
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.index-title-box{
+	float: left;
+	padding: 0 15px 30px 15px;
+	width: 300px;
+}
+.index-title{
+	text-align: center;
+}
+.index-body-box{
+	float: left;
+	padding: 0 15px 30px 15px;
+	width: 300px;
+}
+.index-body{
+	text-align: center;
+}
+.index-show{
+	float: left;
+	padding-right: 20px;
+}
+.index-edit{
+	float: left;
+	padding-right: 20px;
+}
+.index-destroy{
+	float: left;
+	padding-right: 20px;
+}
